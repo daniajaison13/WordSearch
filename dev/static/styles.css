@@ -1,0 +1,34 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.word-search {
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: 2px solid #999;
+}
+
+.word-search td {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #444;
+    background-color: #fff;
+}
+
+.word-search td:hover {
+    background-color: #e6f7ff;
+    cursor: pointer;
+}
