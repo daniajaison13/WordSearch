@@ -26,9 +26,13 @@ h1 {
     font-weight: bold;
     color: #444;
     background-color: #fff;
+    /* Adding gradient background color */
+    background-image: linear-gradient(to bottom right, #ffffff, #f2f2f2);
 }
 
 .word-search td:hover {
     background-color: #e6f7ff;
     cursor: pointer;
+    /* Adding transition for smoother hover effect */
+    transition: background-color 0.3s ease;
 }

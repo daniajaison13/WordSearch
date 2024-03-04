@@ -4,7 +4,7 @@ import string
 
 app = Flask(__name__)
 
-GRID_SIZE = 5
+GRID_SIZE = 10
 WORDS = ["run", "hide", "seek"]
 
 def generate_empty_grid():
