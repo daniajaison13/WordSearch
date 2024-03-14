@@ -2,8 +2,6 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 import Button from "../../components/Button/Button";
-import Leaderboard from "../../components/LeaderBoard/leaderboard";
-import GameHistory from "../../components/GameHistory/gameHistory";
 import Modal from "../../components/Modal/modal";
 import LandingInstructions from "../../components/Instructions/LandingInstructions/LandingInstructions";
 
@@ -14,16 +12,11 @@ const LandingPage = () => {
 		<>
 			<div className="landingContainer">
 				<div className="infoContainer">
-					<a className="feedbackLink" href="https://forms.office.com/r/MJcxbwsKL5">Give Us Feedback!</a>
 					<Button additionalStyles={"landingHelpButton"} buttonType={"button"} handleClick={() => setIsOpen(true)}>?</Button>
 				</div>
 				<div className="pageTitle">WordSearch</div>
 				<div className="dataContainer">
-					<Leaderboard
-						styles={"landingLeaderboard"}
-						site={"landingPage"}
-					/>
-					<GameHistory />
+					
 				</div>
 				<div className="gameButtons">
 					<Link to="/game/normalpuzzle">

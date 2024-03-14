@@ -112,9 +112,9 @@ const DesignPuzzle = () => {
 							onChange={setLevelDifficulty}
 						/>
 					</div>
-					<Button type={"submit"} additionalStyles={"wordsButton"}>
+					{/* <Button type={"submit"} additionalStyles={"wordsButton"}>
 						Generate
-					</Button>
+					</Button> */}
 				</form>
 				{showBoard && Object.keys(puzzleData).length !== 0 ? (
 					<div className="gameWordsContainer">

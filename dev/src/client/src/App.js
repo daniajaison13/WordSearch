@@ -22,7 +22,7 @@ function App() {
 					element={<DailyPuzzle token={token} />}
 				/>
 				<Route
-					path="/game/normalpuzzle"
+					path="/"
 					element={<NormalPuzzle token={token} />} 
 				/>
 				<Route path="/game/designpuzzle" element={<DesignPuzzle />} />
