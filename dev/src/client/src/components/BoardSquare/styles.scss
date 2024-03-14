@@ -1,0 +1,34 @@
+@import "../../styles/variables";
+
+.square {
+	appearance: none;
+	color: $white;
+	background-color: $secondaryColor;
+	font-size: 32px;
+	font-weight: bold;
+	border: 1px solid black;
+	margin: 2px;
+}
+
+.one {
+	width: 60px;
+	height: 60px;
+}
+
+.two {
+	width: 54px;
+	height: 54px;
+}
+
+.three {
+	width: 46px;
+	height: 46px;
+}
+
+.squareOpened {
+	background-color: $buttonColor;
+}
+
+.squareClicked {
+	background-color: $buttonBorderColor;
+}

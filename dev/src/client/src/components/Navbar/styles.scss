@@ -1,0 +1,35 @@
+@import "../../styles/variables";
+
+.navbar {
+	background-color: $secondaryColor;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	height: 70px;
+
+	.logo {
+		height: 50px;
+		margin-left: 20px;
+	}
+
+	.userGreeting {
+		margin-right: 10px;
+	}
+
+	.signButton {
+		margin-right: 20px;
+		font-size: 14px;
+		border-radius: 5px;
+		padding: 4px 12px;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	.loginModal {
+		height: 50%;
+	}
+}
+
+
+

@@ -1,0 +1,110 @@
+.gameContainer {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	.gameWordsContainter {
+		margin-left: 5%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1em;
+		margin-bottom: 20px;
+
+		.wordsContainer {
+			align-self: center;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-radius: 10px;
+			box-shadow: 0 7px 30px rgba(62, 9, 11, 0.3);
+			padding: 20px;
+
+			.guessedWord {
+				text-decoration: line-through;
+			}
+		}
+
+		.gameFunctions {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.boardRow {
+			display: flex;
+		}
+
+		.boardButtons {
+			display: flex;
+			justify-content: center;
+			
+			.boardButton {
+				margin-top: 20px;
+				margin-left: 10px;
+				margin-right: 10px;
+				font-size: 24px;
+				border-radius: 10px;
+				padding: 4px 12px;
+			}
+		}
+	}
+
+	.dailyLeaderboard {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-left: 5%;
+
+		.leadearboardButton {
+			width: 150px;
+			font-size: 14px;
+			border-radius: 10px;
+			padding: 4px 12px;
+			margin-bottom: 10px;
+		}
+
+		.hideLeaderboard {
+			display: none;
+		}
+		
+		.leaderboardStyles {
+			height: 423px;
+			width: 320px;
+		}
+		
+	}
+
+
+}
+
+.gameEndText {
+	text-align: center;
+	color: black;
+}
+
+.score {
+	text-align: center;
+	color: black;
+	font-weight: 500;
+}
+
+.shareButton {
+	width: 100%;
+	font-size: 12px;
+	border-radius: 10px;
+	padding: 10px;
+	margin: 10px 0 0 0;
+	text-align: center;
+}
+
+@media only screen and (max-width: 700px) {
+	.gameWordsContainter {
+		margin-left: 0%;
+	}
+}
+
+@media only screen and (max-width: 650px) {
+	.scoreModal {
+		height: 50%;
+	}
+}

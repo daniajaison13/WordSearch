@@ -1,0 +1,38 @@
+@import "../../styles/variables";
+
+.defaultButton {
+	appearance: none;
+	background-color: $buttonColor;
+	border: 2px solid $buttonBorderColor;
+	color: $white;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: inline-block;
+	font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-weight: 600;
+	line-height: normal;
+	text-align: center;
+	text-decoration: none;
+	transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+	user-select: none;
+	-webkit-user-select: none;
+	touch-action: manipulation;
+	align-items: center;
+	will-change: transform;
+	padding: 4px 12px;
+}
+
+.defaultButton:disabled {
+	pointer-events: none;
+}
+
+.defaultButton:hover {
+	box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+	transform: translateY(-2px);
+}
+
+.defaultButton:active {
+	box-shadow: none;
+	transform: translateY(0);
+}
