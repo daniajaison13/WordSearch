@@ -1,5 +1,6 @@
 # WordSearch
 A word search game where players search for hidden words in a grid of letters. The game can include different categories and difficulty levels, making it suitable for players of all ages.
+The primary objective of this project is to develop a web-based straightforward Word Search game.
 
 ### Milestones with Deadlines:
 Week 1: Basic grid generation and word placement algorithm implemented 
@@ -9,8 +10,9 @@ Week 4: Integrate backend and frontend
 Week 5: Final testing and bug fixing
 
 ### Technologies Used:
-Front-end: HTML, CSS, JS, Node
+Front-end: React, Node
 Back-end: Flask, Python
+Database: MongoDB Atlas cloud
 Algorithms/AI Schemes:
 Grid Generation: Generate a grid of letters with rows and columns. Randomly select letters to fill the grid.
 
