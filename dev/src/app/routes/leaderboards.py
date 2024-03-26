@@ -155,7 +155,6 @@ def leaderboard_landing_page():
         )
     
     todays_reward_game_id = todays_reward_game['_id']
-
     # use the game id to get the leaderboard
     return leaderboard_get_leaderboard(todays_reward_game_id)
 

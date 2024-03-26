@@ -17,13 +17,7 @@ const LandingPage = () => {
 					<Button additionalStyles={"landingHelpButton"} buttonType={"button"} handleClick={() => setIsOpen(true)}>?</Button>
 				</div>
 				<div className="pageTitle">WordSearch</div>
-				<div className="dataContainer">
-					<Leaderboard
-						styles={"landingLeaderboard"}
-						site={"landingPage"}
-					/>
-					<GameHistory />
-				</div>
+				
 				<div className="gameButtons">
 					<Link to="/game/normalpuzzle">
 						<Button additionalStyles={"buttons"} buttonType={"button"}>
@@ -40,6 +34,13 @@ const LandingPage = () => {
 							Design Puzzle
 						</Button>
 					</Link>
+				</div>
+				<div className="dataContainer">
+					<Leaderboard
+						styles={"landingLeaderboard"}
+						site={"landingPage"}
+					/>
+					<GameHistory />
 				</div>
 			</div>
 			<Modal additionalStyles={"landingModal"} open={isOpen} onClose={() => setIsOpen(false)}>

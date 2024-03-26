@@ -8,7 +8,7 @@ import "./styles.scss";
 import BoardSquare from "../BoardSquare/BoardSquare";
 import Timer from "../Timer/Timer";
 import Modal from "../Modal/modal";
-// import Leaderboard from "../LeaderBoard/leaderboard";
+import Leaderboard from "../LeaderBoard/leaderboard";
 import Button from "../Button/Button";
 
 const GameGrid = ({
@@ -16,7 +16,7 @@ const GameGrid = ({
 	size,
 	words,
 	level,
-	// gameId,
+	gameId,
 	gameHistoryId,
 	token,
 }) => {
@@ -28,7 +28,7 @@ const GameGrid = ({
 	const [finishedGameData, setFinishedGameData] = useState({});
 
 	const [canContinue, setCanContinue] = useState(true);
-	// const [openLeaderboard, setOpenLeaderboard] = useState(false);
+	const [openLeaderboard, setOpenLeaderboard] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	const [stopTimer, setStopTimer] = useState(false);
 
@@ -338,7 +338,7 @@ const GameGrid = ({
 					</div>
 				</div>
 
-				{/* <div className="dailyLeaderboard">
+				<div className="dailyLeaderboard">
 					<Button
 						additionalStyles={"leadearboardButton"}
 						type={"button"}
@@ -353,7 +353,7 @@ const GameGrid = ({
 						site={"dailyPuzzle"}
 						gameId={gameId}
 					/>
-				</div> */}
+				</div>
 			</div>
 
 			<Modal additionalStyles={"scoreModal"} open={isOpen} onClose={handleModalClose}>
