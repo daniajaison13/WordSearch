@@ -11,7 +11,7 @@ The frontend is developed using Node.js, currently undergoing active testing wit
 
 2. Install Required Dependencies
    - Commands are the same for Windows, MacOS, and Linux.
-   - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/CSS566-Final-Project/`).
+   - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/WordSearch/`).
    - Change directory to the source -> Node.js client folder: `cd src/client`.
    - Install dependencies: `npm install`.
 
