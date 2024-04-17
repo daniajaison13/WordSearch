@@ -29,7 +29,7 @@ The backend is constructed using pure Python and the popular microframework Flas
 2. Install Virtual Environment (Recommended But Not Required)
    - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/CSS566-Final-Project/`).
    `python -m venv env`
-   `source env/bin/activate`
+   `source ./env/bin/activate`
 
 3. Install Required Packages
    - Make sure you have the `requirements.txt` file in the `src` folder.
@@ -38,4 +38,5 @@ The backend is constructed using pure Python and the popular microframework Flas
 
 4. Start the Flask Server
    - Once all packages are installed and you are still in the `src` folder, start the Flask application using the provided commands based on your OS.
+   - python3 app.py
    - Navigate to `http://127.0.0.1:5000/` in your browser to verify if the Flask application is running correctly.
