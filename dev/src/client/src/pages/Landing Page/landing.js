@@ -9,6 +9,7 @@ import LandingInstructions from "../../components/Instructions/LandingInstructio
 
 const LandingPage = () => {
 
+	const [openLeaderboard, setOpenLeaderboard] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
@@ -16,7 +17,10 @@ const LandingPage = () => {
 				<div className="infoContainer">
 					<Button additionalStyles={"landingHelpButton"} buttonType={"button"} handleClick={() => setIsOpen(true)}>?</Button>
 				</div>
-				<div className="pageTitle">WordSearch</div>
+				<div className="wrapper">
+					<div className="pageTitle">wordsearch</div>
+				</div>
+				
 				
 				<div className="gameButtons">
 					<Link to="/game/normalpuzzle">
@@ -36,10 +40,21 @@ const LandingPage = () => {
 					</Link>
 				</div>
 				<div className="dataContainer">
-					<Leaderboard
-						styles={"landingLeaderboard"}
-						site={"landingPage"}
-					/>
+					<div className="dailyLeaderboard">
+						<Button
+							additionalStyles={"leadearboardButton"}
+							type={"button"}
+							handleClick={() => setOpenLeaderboard(!openLeaderboard)}
+						>
+							{openLeaderboard ? "Close leaderboard" : "Open Leaderboard"}
+						</Button>
+						<Leaderboard
+							styles={`${
+								!openLeaderboard ? "hideLeaderboard" : null
+							} leaderboardStyles`}
+							site={"landingPage"}
+						/>
+					</div>
 					<GameHistory />
 				</div>
 			</div>
