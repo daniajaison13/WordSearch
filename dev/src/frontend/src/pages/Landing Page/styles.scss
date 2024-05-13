@@ -1,0 +1,131 @@
+.landingContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.infoContainer {
+		align-self: end;
+		margin-top: 20px;
+		margin-right: 20px;
+
+		.landingHelpButton {
+			font-size: 16px;
+			border-radius: 100%;
+			margin-left: 10px;
+		}
+	}
+
+	// .pageTitle {
+	// 	text-align: center;
+	// 	font-size: 84px;
+	// 	font-weight: 500;
+	// 	margin-bottom: 16px;
+	// 	margin-top: 16px;
+	// 	animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+	// }
+	.wrapper {
+		height: 20vh;
+		/*This part is important for centering*/
+		display: grid;
+		place-items: center;
+	  }
+	.pageTitle {
+		text-align: center;
+		width: 10ch;
+		animation: typing 1s steps(22), blink .5s step-end infinite alternate;
+		white-space: nowrap;
+		overflow: hidden;
+		border-right: 3px solid;
+		font-family: monospace;
+		font-size: 5em;
+	}
+
+	@keyframes typing {
+	from {
+		width: 0
+	}
+	}
+		
+	@keyframes blink {
+	50% {
+		border-color: transparent
+	}
+	}
+	
+	.dataContainer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
+		flex-direction: row;
+		justify-content: center;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.gameButtons {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		gap: 1em;
+
+		.buttons {
+			width: 160px;
+			height: 20%;
+			font-size: 16px;
+			border-radius: 10px;
+			padding: 4px 12px;
+			margin-bottom: 20px;
+		}
+
+		.buttonsspecial {
+			width: 200px;
+			height: 50px;
+			font-size: 20px;
+			border-radius: 10px;
+			padding: 4px 12px;
+			margin-bottom: 20px;
+		}
+		
+	}
+
+	.feedbackLink {
+		justify-self: end;
+	}
+
+}
+
+.landingModal {
+	width: 50%;
+}
+
+@media only screen and (max-width: 1300px) {
+	.landingModal {
+		height: 60%;
+	}
+}
+
+.dailyLeaderboard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 5%;
+
+	.leadearboardButton {
+		width: 150px;
+		font-size: 14px;
+		border-radius: 10px;
+		padding: 4px 12px;
+		margin-bottom: 10px;
+	}
+
+	.hideLeaderboard {
+		display: none;
+	}
+	
+	.leaderboardStyles {
+		height: 423px;
+		width: 320px;
+	}
+	
+}

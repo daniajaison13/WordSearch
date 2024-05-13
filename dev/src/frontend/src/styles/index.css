@@ -1,0 +1,13 @@
+body {
+	margin: 0;
+	font-family: -apple-system, monospace, 'Lucida Console';
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: white;
+	color: rgb(2, 103, 63);
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}

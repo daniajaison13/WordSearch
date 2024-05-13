@@ -1,0 +1,55 @@
+@import "../../styles/variables";
+
+.normalContainer {
+	display: flex;
+	flex-direction: column;
+
+	.normalHelpButton {
+		align-self: end;
+		font-size: 16px;
+		border-radius: 100%;
+		margin-top: 20px;
+		margin-right: 20px;
+	}
+
+	.normalTitle {
+		text-align: center;
+		font-size: 34px;
+		font-weight: 700;
+		margin-bottom: 16px;
+		margin-top: 16px;
+	}
+
+	.noGameText {
+		text-align: center;
+	}
+
+	.levelSelection {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 1em;
+		margin-top: 40px;
+		margin-bottom: 10px;
+
+		.levelText {
+			font-size: 20px;
+				font-weight: 500;
+			margin-right: 10px;
+		}
+
+		.levelDropdown {
+			color: $textColorBlack;
+		}
+	}
+}
+
+.normalModal {
+	width: 50%;
+}
+
+@media only screen and (max-width: 1025px) {
+	.normalModal {
+		height: 60%;
+	}
+}
