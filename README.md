@@ -18,7 +18,12 @@ Grid Generation: Generate a grid of letters with rows and columns. Randomly sele
 
 ### Word Placement Algorithm: Use techniques such as backtracking to strategically place hidden words. Ensure words intersect and do not conflict with each other or violate constraints.
 
-###Market Space and Selling Points:
+### Market Space and Selling Points:
 The application targets users of all ages who enjoy puzzle games.
 Selling points include multiple categories, varying difficulty levels, and an intuitive user interface.
+
+### Deployed links
+The frontend is deployed on Vercel and the backend is deployed on Heroku
+Frontend - https://wordsearch-test.vercel.app/
+Backend - https://wordsearch-backend-92d7d7748775.herokuapp.com/
 
