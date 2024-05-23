@@ -12,12 +12,12 @@ The frontend is developed using Node.js, currently undergoing active testing wit
 2. Install Required Dependencies
    - Commands are the same for Windows, MacOS, and Linux.
    - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/WordSearch/`).
-   - Change directory to the source -> Node.js client folder: `cd src/client`.
+   - Change directory to the source -> Node.js client folder: `cd /dev/src/frontend`.
    - Install dependencies: `npm install`.
 
 3. Start the Node.js Client
-   - Once all dependencies are installed without errors, start the frontend Node.js client with either of the commands:
-     - `npm run start:dev` for the development environment.
+   - Once all dependencies are installed without errors, start the frontend Node.js client with:
+     - `npm run start:dev'
    - Wait for the client to start. Once all services are up, a new page will open in the default browser.
 
 # Backend
@@ -27,7 +27,7 @@ The backend is constructed using pure Python and the popular microframework Flas
    - Download Link: [Python](https://www.python.org/downloads/) (Choose the newest version of either 3.11 or 3.10).
 
 2. Install Virtual Environment (Recommended But Not Required)
-   - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/CSS566-Final-Project/`).
+   - Navigate to the project folder in the terminal (e.g., `<Your Local Path>/WordSearch/dev/src/backend`).
    `python -m venv env`
    `source ./env/bin/activate`
 
@@ -37,6 +37,5 @@ The backend is constructed using pure Python and the popular microframework Flas
    Install certifi `python3 -m pip install certifi`
 
 4. Start the Flask Server
-   - Once all packages are installed and you are still in the `src` folder, start the Flask application using the provided commands based on your OS.
-   - python3 app.py
-   - Navigate to `http://127.0.0.1:5000/` in your browser to verify if the Flask application is running correctly.
+   - Run python3 app.py to run the application
+   - Navigate to `http://127.0.0.1:8080/` in your browser to verify if the Flask application is running correctly.

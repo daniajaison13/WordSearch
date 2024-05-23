@@ -485,6 +485,7 @@ class Game:
             {'created_by': 0, 'customized': 0, 'key': 0}
         )
 
+        print(game)
         # convert the ObjectId to string
         if game:
             game['_id'] = str(game['_id'])

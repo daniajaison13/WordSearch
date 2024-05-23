@@ -202,15 +202,14 @@ class GameHistory:
         Returns:
             list: list of game histories of the user
         '''
-        game_history = list(self._collection.find({'user_id': bson.ObjectId(user_id)}, {'user_id': 0}, {'finished': 'true'}))
+        game_history = list(self._collection.find({'user_id': bson.ObjectId(user_id)}, {'user_id': 0}))
+        finished_game_history = []  # List to store finished game histories
 
         if game_history:
             game = Game()
 
             for gh in game_history:
-                print(gh)
                 # convert the ObjectId to str
-                # rename the _id to game_history_id and remove the _id
                 gh['game_history_id'] = str(gh['_id'])
                 del gh['_id']
 
@@ -223,7 +222,12 @@ class GameHistory:
                 gh['start_time'] = gh['start_time'].strftime('%Y-%m-%d %H:%M:%S')
                 gh['end_time'] = gh['end_time'].strftime('%Y-%m-%d %H:%M:%S') if gh['end_time'] else None
 
-        return game_history 
+                # Add to finished_game_history if finished is True
+                if gh.get('finished'):
+                    finished_game_history.append(gh)
+
+        return finished_game_history
+
     
     def validate(self, game_history_id: str):
         '''

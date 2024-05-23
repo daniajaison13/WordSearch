@@ -2,14 +2,14 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./styles.scss";
 import Button from "../../components/Button/Button";
-// import Leaderboard from "../../components/LeaderBoard/leaderboard";
+import Leaderboard from "../../components/LeaderBoard/leaderboard";
 import GameHistory from "../../components/GameHistory/gameHistory";
 import Modal from "../../components/Modal/modal";
 import LandingInstructions from "../../components/Instructions/LandingInstructions/LandingInstructions";
 
 const LandingPage = () => {
 
-	// const [openLeaderboard, setOpenLeaderboard] = useState(false);
+	const [openLeaderboard, setOpenLeaderboard] = useState(false);
 	const [isOpen, setIsOpen] = useState(false);
 	return (
 		<>
@@ -40,7 +40,7 @@ const LandingPage = () => {
 					</Link>
 				</div>
 				<div className="dataContainer">
-					{/* <div className="dailyLeaderboard">
+					<div className="dailyLeaderboard">
 						<Button
 							additionalStyles={"leadearboardButton"}
 							type={"button"}
@@ -54,7 +54,7 @@ const LandingPage = () => {
 							} leaderboardStyles`}
 							site={"landingPage"}
 						/>
-					</div> */}
+					</div>
 					<GameHistory />
 				</div>
 			</div>
