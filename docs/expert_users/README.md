@@ -39,3 +39,9 @@ The backend is constructed using pure Python and the popular microframework Flas
 4. Start the Flask Server
    - Run python3 app.py to run the application
    - Navigate to `http://127.0.0.1:8080/` in your browser to verify if the Flask application is running correctly.
+  
+# Notes
+In case you face issue with @babel/traverse module, run
+'npm install @babel/traverse --save-dev' to reinstall the missing dependency.
+
+Or else creating a new virtual environment and reinstalling the dependencies will help resolve this issue.
